@@ -1,0 +1,7 @@
+.obsidian/workspace*.json
+.DS_Store
+Thumbs.db
+*.tmp
+node_modules/
+docs/dokazi/*.mp4
+docs/dokazi/*.mkv
