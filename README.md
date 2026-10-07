@@ -1,19 +1,23 @@
-# Simulacija upozorenja na temperaturu
+# Simulator temperaturnih upozorenja
 
-Inačica: demo-v04. Projekt provjerava ručno unesenu temperaturu. Nema fizičkog senzora, mjerenja vlage ni upravljanja ventilatorom.
+**Verzija:** demo-v04. Aplikacija služi za ručnu provjeru unesene temperature. Sustav ne uključuje fizički senzor, mjerenje vlage ni automatsku regulaciju ventilatora.
 
-## Pokretanje
+## Pokretanje aplikacije
 
-1. Kopirajte cijelu mapu `tim-01-pametni-senzor` na vlastito računalo.
-2. U pregledniku otvorite `src/index.html`. Instalacija dodataka ili poslužitelja nije potrebna.
-3. Unesite `30` i kliknite **Provjeri temperaturu**. Očekujte upozorenje.
-4. Unesite `28`. Očekujte dopušteno stanje. Prazan unos mora dati pogrešku.
+1. Kopirajte cijelu mapu `tim-01-pametni-senzor` na svoje računalo.
+2. Otvorite datoteku `src/index.html` u bilo kojem internetskom pregledniku (dodatne instalacije ili poslužitelji nisu potrebni).
+3. Upišite `30` i pritisnite **Provjeri temperaturu** – sustav će generirati upozorenje.
+4. Unesite `28` za dopušteno stanje, dok prazno polje mora rezultirati porukom o pogrešci.
 
-Valjan raspon je od -40 do 85 °C uključivo. Upozorenje se pojavljuje za vrijednost strogo veću od 28 °C, najkasnije pet sekundi nakon klika.
+Valjani raspon temperature kreće se od -40 do 85 °C uključivo. Upozorenje se aktivira za vrijednosti strogo veće od 28 °C, i to najkasnije pet sekundi nakon klika.
 
-## Namjerno pogrešna inačica za tutorial 08
+---
 
-Otvorite `variants/pogreska-prag/index.html`. Ona namjerno koristi prag 35 umjesto zahtijevanih 28. Unos 30 zato otkriva pogrešku. Ne koristite je kao ispravnu projektnu inačicu.
+## Namjerno neispravna inačica za tutorial 08
+
+U mapi `variants/pogreska-prag/index.html` nalazi se verzija s namjernom pogreškom – koristi prag 35 umjesto zahtijevanih 28 °C. Zbog toga unos vrijednosti `30` odmah otkriva grešku. Nemojte koristiti ovu datoteku kao ispravnu projektnu inačicu.
+
+---
 
 ## Dokumentacija
 
@@ -32,4 +36,4 @@ Otvorite `variants/pogreska-prag/index.html`. Ona namjerno koristi prag 35 umjes
 
 ![Kontekst aplikacije](docs/slike/sustav.png)
 
-U ovoj vježbi veličina simulacije služi učenju alata. Složenost godišnjeg projekta dogovara se zasebno.
+> **Napomena:** Opseg ove simulacije prilagođen je učenju alata i svladavanju osnova, dok se stvarna složenost godišnjeg projekta definira i dogovara zasebno.
